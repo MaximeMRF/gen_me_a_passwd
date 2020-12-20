@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#########################
+#                       #
+#   Password Generator  #
+#                       #
+#   Made by MaximeMRF   #
+#                       #
+#########################
+
+# github.com/MaximeMRF
+# first params is for the lenght of the password
+# second params is for the numbers of password do you want generate
+
+#####################################################################
+
+i=1
+
+if [ -z $1 ]
+    then
+        echo "no password lenght"
+    else
+        if [ -z $2 ]
+            then
+                < /dev/urandom tr -dc a-zA-Z0-9'[~!@#$%^&*()-_=+[]{};:,.<>/?|]' | head -c${1:-12}
+            else
+                while [ $i -le $2 ]
+                    do 
+                        < /dev/urandom tr -dc a-zA-Z0-9'[~!@#$%^&*()-_=+[]{};:,.<>/?|]' | head -c${1:-12}
+                        echo
+                        i=$(( $i + 1 ))
+                done
+        fi
+fi

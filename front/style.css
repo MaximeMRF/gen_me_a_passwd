@@ -1,5 +1,5 @@
 html {
-    background-color: #202324;
+    background-color: #5E60CE;
 }
 
 #content {
@@ -10,26 +10,31 @@ html {
 
 h1 {
     font-size: 3em;
-    color: rgb(51, 124, 189);
+    color: #64dfdf;
     text-align: center;
 }
 
 p {
     font-size: 2.5em;
-    color: cornflowerblue;
+    color: #80ffdb;
 }
 
 input {
+    border-radius: 2em;
+    border-style: solid;
+    border-color: #7400b8;
     color: white;
-    background-color: #181d1f;
+    background-color: #6930c3;
     font-size: 1.5em;
+    text-align: center;
     margin: 3em;
+    width: 4em;
 }
 
 button {
     border-radius: 2em;
     border-style: solid;
-    border-color: rgb(38, 70, 71);
-    background-color: cadetblue;
+    border-color: #6930c3;
+    background-color: #5390d9;
     font-size: 2em;
 }
